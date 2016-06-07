@@ -1,0 +1,45 @@
+{
+  "ProjectName": "COHHR",
+  "ProjectGuid": "550d44a1-185a-4a22-8660-ea2b80dd60c5",
+  "projectVersion": 1,
+  "AppIdentifier": "com.telerik.COHHR",
+  "DisplayName": "COHHR",
+  "Author": "",
+  "Description": "COHHR",
+  "BundleVersion": "1.0",
+  "AndroidVersionCode": "1",
+  "iOSDeviceFamily": [
+    "1",
+    "2"
+  ],
+  "iOSBackgroundMode": [],
+  "ProjectTypeGuids": "{070BCB52-5A75-4F8C-A973-144AF0EAFCC9}",
+  "FrameworkVersion": "4.0.0",
+  "AndroidPermissions": [
+    "android.permission.INTERNET"
+  ],
+  "DeviceOrientations": [
+    "Portrait",
+    "Landscape"
+  ],
+  "AndroidHardwareAcceleration": "true",
+  "iOSStatusBarStyle": "Default",
+  "Framework": "Cordova",
+  "WP8TileTitle": "",
+  "WP8Publisher": "",
+  "WP8Capabilities": [
+    "ID_CAP_NETWORKING",
+    "ID_CAP_WEBBROWSERCOMPONENT"
+  ],
+  "WP8Requirements": [],
+  "WP8PublisherID": "{8fc26dca-1b0c-4f21-be52-b098ad0541e6}",
+  "WP8ProductID": "{42663602-5499-4ddb-bd27-cdd52ecef26a}",
+  "WPSdk": "8.0",
+  "WP8PackageIdentityName": "1234Telerik.COHHR",
+  "WP8WindowsPublisherName": "CN=Telerik",
+  "WP8SupportedResolutions": [
+    "ID_RESOLUTION_WVGA",
+    "ID_RESOLUTION_WXGA",
+    "ID_RESOLUTION_HD720P"
+  ]
+}
