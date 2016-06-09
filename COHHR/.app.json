@@ -5,7 +5,7 @@
       "type": "kendo-ui-mobile:view",
       "name": "home",
       "components": [],
-      "title": "Home View",
+      "title": "City of Houston",
       "addToNavigation": true,
       "icon": "home"
     }
