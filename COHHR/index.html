@@ -15,169 +15,113 @@
     <script src="app.js"></script>
 </head>
 
-<body id="kendoUiMobileApp">
+<body id="kendoUiMobileApp"  style="background:url(kendo/styles/images/backgroundcolor.jpg)">
+    
+
+
+
+    
     <script src="components/home/index.js"></script>
+    
     <div data-role="layout" data-id="main">
         <header data-role="header">
-            <div data-role="navbar">
-               <a href="" onClick="window.open('http://www.houstontx.gov/', '_blank')"><img src="kendo/styles/images/COHLOGO-3.png"  style=" width:48px; height:48px" align="left"></img></a> 
-               <span style="font-size:20px; color:#ffffff; font-family: Times New Roman; font-weight: bold" data-role="view-title"></span>
-               <a href="" onClick="window.open('http://www.houstontx.gov/hr/', '_blank')"><img src="kendo/styles/images/HRLogo.jpg" style=" width:50px; height:50px" align="right"></img></a>
-             </div>
-   
-  <div id="wrapper-header">
-	<div id="main-header" class="object">
-		
-        <div id="main_tip_search"> 
-			<div id="test">
-                <b>
-                  The Employee Relations Division plans and conducts labor negotiations, implements labor agreements, and assists managers and supervisors with employee issues, including corrective action.
-                </b>
-        
-             </div>
-		</div>
-        <div id="stripes"></div>
-    </div>
-      
-</div>
-    <table>
-        <tr>
-            <td>
-              <div id="wrapper-container">
-    
-				<div class="container object">
-
-				<div id="main-container-image">
-        			               
-					<section class="work">
-
-						<figure class="white">
-							<a href="" onClick="window.open('http://www.houstontx.gov/', '_blank')">
-								<img src="kendo/styles/images/about-icon-d2.png" alt="" width="100%" height="100%" />
-							</a>
-                            <div id="wrapper-part-info">
-                            	 <!-- <div class="part-info-image"><img src="kendo/styles/images/icon-psd.svg" alt="" width="28" height="28"/>ABOUT</div> -->
-                            	 <div id="part-info" align="center"><b>About</b></div>
-							</div>
-                        </figure>	
-                        
-                    </section>
-                    </div>
-                  </div>
-                </div>
-                </td>
-            <td>
-             <div id="wrapper-container">
-    
-				<div class="container object">
-
-				<div id="main-container-image">
-        			               
-					<section class="work">
-
-						<figure class="white">
-							<a href="" onClick="window.open('http://www.houstontx.gov/', '_blank')">
-								<img src="kendo/styles/images/images.png" alt=""  width="100%" height="100%" />
-							</a>
-                            <div id="wrapper-part-info">
-                            	<!-- <div class="part-info-image"><img src="kendo/styles/images/icon-psd.svg" alt="" width="28" height="28"/></div> -->
-                            	<div id="part-info"  align="center"><b>FAQs</b></div>
-							</div>
-                        </figure>	
-                        
-                    </section>
-                    </div>
-                  </div>
-                </div>
-            </td>
-        </tr>
-        <tr>
-            <td>
-            <div id="wrapper-container">
-    
-				<div class="container object">
-
-				<div id="main-container-image">
-        			               
-					<section class="work">
-
-						<figure class="white">
-							<a href="" onClick="window.open('http://houstontx.gov/hr/guidepages/Muncipal%20Employee%20Guidebook%20rv2272014.pdf', '_blank')">
-								<img src="kendo/styles/images/employee-handbook.jpg" alt=""  width="100%" height="100%" />
-							</a>
-                            <div id="wrapper-part-info">
-                            	<!-- <div class="part-info-image"><img src="kendo/styles/images/icon-psd.svg" alt="" width="28" height="28"/></div> -->
-                            	<div id="part-info"  align="center"><b>Employee Relations Handbook</b></div>
-							</div>
-                        </figure>	
-                        
-                    </section>
-                    </div>
-                  </div>
-                </div>
-            </td>
-            <td>
-            <div id="wrapper-container">
-    
-				<div class="container object">
-
-				<div id="main-container-image">
-        			               
-					<section class="work">
-
-						<figure class="white">
-							<a href="ContactUs.html">
-								<img src="kendo/styles/images/contact_us_icon_dj2crt93.png" alt=""  width="100%" height="100%" />
-							</a>
-                            <div id="wrapper-part-info">
-                            	<!-- <div class="part-info-image"><img src="kendo/styles/images/icon-psd.svg" alt="" width="28" height="28"/></div> -->
-                            	<div id="part-info" align="center"><b>Contact Us</b></div>
-							</div>
-                        </figure>	
-                        
-                    </section>
-                    </div>
-                  </div>
-                </div>
-            </td>
-            
-        </tr>
-       
-       </table>       
-        
-    </header> 
- 
-       
-        <footer data-role="footer">
-            <div data-role="tabstrip" id="navigation-container">
-                <a href="components/home/view.html" data-icon="home">Home</a>
-                <a href="components/home/view.html" data-icon="about us">Info</a>
-                <a href="components/home/view.html" data-icon="help">help</a>
+            <div data-role="navbar" style="background:url(kendo/styles/images/backgroundcolor.jpg)">
                 
+                <table align="left" style="position: relative;left:-20px"> 
+                    <tr>
+                    <td align="right" style="position: relative;right:-30px"><span style="font-size:30px;cursor:pointer" onclick="openNav()">☰</span></td>
+                    <td align="right">
+                        <img src="kendo/styles/images/hr-white.png" width="55%" height="50%">
+                    </td>
+                     <td style="position: relative;left:-20px">                   
+                          <p class="small"  align="left">
+                              <span style="font-size:16px; color:#ffffff; font-family: Times New Roman; font-weight: bold" align="center">City of Houston<br></span>
+                              <span style="font-size:15px; color:#ffffff; font-family: Times New Roman; font-weight: bold" align="center">Employee Relations</span>
+                          </p>
+                      </td>
+                   </tr>
+                 </table>
+              </div>
+            <div style="position: relative;top:-35px" align="center">
+                  <img src="kendo/styles/images/image_white_line.png" width="75%" height="5px">
             </div>
-        </footer>
-    </div>
+             
+            
 
    
+<br>
+    <table width="90%" align="center">
+        <tr width="100%">
+            <td>
+		          <a href="About.html">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                     <img src="kendo/styles/images/aboutus.png" width="60%" height="21%">
+                  </a>
+            </td>
+            <td>
+		          <a href="FAQs.html">
+                     <img src="kendo/styles/images/faq2.png" width="59%" height="20%" hspace="20px,0px">
+                  </a>
+            </td>
+        </tr>
+       <tr><td><br><br></td></tr>
+        <tr width="100%">
+            <td>
+		          <a href="municipal_employee_Guide.html">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                     <img src="kendo/styles/images/handbook.png"  width="55%" height="25%" >
+                  </a>
+            </td>
+            <td>
+		          <a href="ContactUs.html">
+                     <img src="kendo/styles/images/contactus.png" width="58%" height="20%" hspace="20px,0px">
+                  </a>
+            </td>
+        </tr>
+     </table>     
+            <br>
+        <div id="mySidenav" class="sidenav">
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+            
+              <a style="font-size:20px; color:#ffffff; font-weight: bold">City of Houston Employee Resources</a>
+            
+              <a style="position: relative;top:-25px"><img src="kendo/styles/images/image_white_line.png" width="100%" height="8px"></a>
+              
+        
+              <a style="position: relative;top:-30px" href=""><img src="kendo/styles/images/button_slidemenu_contact.png" width="80%" height="60%"></a>
+           
+              <a style="position: relative;top:-30px" href=""><img src="kendo/styles/images/button_slidemenu_empl_relatns.png" width="80%" height="60%"></a>
 
-    <div data-role="layout" data-id="main-nonav">
-        <header data-role="header">
-            <div data-role="navbar">
-                <span data-role="view-title"></span>
-            </div>
+              <a style="position: relative;top:-30px" href=""><img src="kendo/styles/images/button_slidemenu_faq.png" width="80%" height="60%"></a>
+       
+              <a style="position: relative;top:-30px" href=""><img src="kendo/styles/images/button_slidemenu_news.png" width="80%" height="60%"></a>
+         
+              <a style="position: relative;top:-30px" href=""><img src="kendo/styles/images/button_slidemenu_resources.png" width="80%" height="60%"></a>
+          
+              <a style="position: relative;top:-30px" href=""><img src="kendo/styles/images/button_slidemenu_training.png" width="80%" height="60%"></a>
+         </div>
         </header>
         <footer data-role="footer">
+            <div data-role="tabstrip" id="navigation-container" style="background:url(kendo/styles/images/backgroundcolor.jpg)">
+                <a data-icon="info" href="AppInfo.html" style="background:url(kendo/styles/images/backgroundcolor.jpg)">App Info</a>
+                <a data-icon="featured"  onclick="onButtonDown()" style="background:url(kendo/styles/images/backgroundcolor.jpg)">Exit</a>
+                <a data-icon="search" href="help.html" style="background:url(kendo/styles/images/backgroundcolor.jpg)">Help</a>
+            </div>
         </footer>
-    </div>
+   </div>
+
     <!-- START_CUSTOM_CODE_kendoUiMobileApp -->
     <!-- Add custom code here. For more information about custom code, see http://docs.telerik.com/platform/screenbuilder/troubleshooting/how-to-keep-custom-code-changes -->
+   <style>
+      p.small {
+         line-height: 110%;
+      }
 
-       
-      
-     
-        
-    
+      p.big {
+         line-height: 200%;
+      }
+   </style> 
     <!-- END_CUSTOM_CODE_kendoUiMobileApp -->
+    
+    
 </body>
 
 </html>

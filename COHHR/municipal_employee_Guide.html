@@ -1,0 +1,1044 @@
+
+<!-- saved from url=(0074)municipal_employee_Guide.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<style type="text/css">
+.style2 {
+	border-style: solid;
+	border-width: 1px;
+}
+.style3 {
+	border-style: solid;
+	border-width: 1px;
+	text-align: center;
+}
+.style4 {
+	border-style: solid;
+	border-width: 1px;
+	text-align: center;
+	background-color: #C0C0C0;
+}
+.style5 {
+	color: #FF0000;
+}
+.style6 {
+	color: #008080;
+}
+</style>
+    
+  <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js'></script>
+  
+  <style type='text/css'>
+    body {
+  background-color: white;  
+    color: #0066cc;
+    font: 12px/1.4em Arial,sans-serif;
+}
+#wrap {
+   margin: 10px auto;        
+    background: #666;
+    padding: 10px;
+    width: 700px;
+}
+#header {
+    background-color: white;
+    color: black;
+}
+#logo {
+    font-size: 30px;  
+line-height: 40px;    
+    padding: 5px;
+}
+#navWrap {
+    height: 30px;
+}
+#nav {
+padding: 5px;
+    background:lightgrey;
+
+}
+#nav ul {
+   margin: 0;
+padding: 0;    
+}
+#nav li {
+    float: left;
+    padding: 3px 8px;
+    background-color: #FFF;
+    margin: 0 10px 0 0;
+    color: #F00;
+    list-style-type: none;
+}
+#nav li a {
+ color: #F00;  
+text-decoration: none;    
+}
+#nav li a:hover {
+  text-decoration: underline;   
+}
+br.clearLeft {
+   clear: left;        
+}
+.bigNum {
+   font-size: 20px;
+color: #000;
+ background: #FFF;
+padding: 2px;    
+}
+
+  </style>
+  
+
+
+<script type='text/javascript'>//<![CDATA[ 
+$(window).load(function(){
+/**
+************************************************************
+*************** THIS IS THE NAVIGATION CODE ****************
+************************************************************
+**/
+
+$(function() {
+    // Stick the #nav to the top of the window
+    var nav = $('#nav');
+    var navHomeY = nav.offset().top;
+    var isFixed = false;
+    var $w = $(window);
+    $w.scroll(function() {
+        var scrollTop = $w.scrollTop();
+        var shouldBeFixed = scrollTop > navHomeY;
+        if (shouldBeFixed && !isFixed) {
+            nav.css({
+                position: 'fixed',
+                bottom: 5,
+                left: nav.offset().left,
+                width: nav.width()
+            });
+            isFixed = true;
+        }
+        else if (!shouldBeFixed && isFixed)
+        {
+            nav.css({
+                position: 'static'
+            });
+            isFixed = false;
+        }
+    });
+});
+
+
+/**
+************************************************************
+*** THIS IS THE ADD-IN SMOOTH SCROLLING CODE ***************
+*** (see: http://www.dwuser.com/education/content/quick-guide-adding-smooth-scrolling-to-your-webpages/ )
+************************************************************
+**/
+
+
+/**
+ * SmoothScroll
+ * This helper script created by DWUser.com.  Copyright 2012 DWUser.com.  
+ * Dual-licensed under the GPL and MIT licenses.  
+ * All individual scripts remain property of their copyrighters.
+ * Date: 10-Sep-2012
+ * Version: 1.0.1
+ */
+if (!window['jQuery']) alert('The jQuery library must be included before the smoothscroll.js file.  The plugin will not work propery.');
+
+/**
+ * jQuery.ScrollTo - Easy element scrolling using jQuery.
+ * Copyright (c) 2007-2012 Ariel Flesler - aflesler(at)gmail(dot)com | http://flesler.blogspot.com
+ * Dual licensed under MIT and GPL.
+ * @author Ariel Flesler
+ * @version 1.4.3.1
+ */
+;(function($)
+  {var h=$.scrollTo=function(a,b,c)
+  {$(window).scrollTo(a,b,c)};
+   h.defaults={axis:'xy',duration:parseFloat($.fn.jquery)>=1.3?0:1,limit:true};
+   h.window=function(a){return $(window)._scrollable()};
+   $.fn._scrollable=function()
+   {return this.map(function()
+   {var a=this,isWin=!a.nodeName||$.inArray(a.nodeName.toLowerCase(),
+      ['iframe','#document','html','body'])!=-1;if(!isWin)return a;
+    var b=(a.contentWindow||a).document||a.ownerDocument||a;return/webkit/i.test(navigator.userAgent)||b.compatMode=='BackCompat'?b.body:b.documentElement})};
+   $.fn.scrollTo=function(e,f,g)
+   {if(typeof f=='object')
+   {g=f;f=0}if(typeof g=='function')g={onAfter:g};
+   if(e=='max')e=9e9;g=$.extend({},h.defaults,g);f=f||g.duration;g.queue=g.queue&&g.axis.length>1;if(g.queue)f/=2;g.offset=both(g.offset);g.over=both(g.over);return this._scrollable().each(function(){if(e==null)return;var d=this,$elem=$(d),targ=e,toff,attr={},win=$elem.is('html,body');switch(typeof targ){case'number':case'string':if(/^([+-]=)?\d+(\.\d+)?(px|%)?$/.test(targ)){targ=both(targ);break}targ=$(targ,this);if(!targ.length)return;case'object':if(targ.is||targ.style)toff=(targ=$(targ)).offset()}$.each(g.axis.split(''),function(i,a){var b=a=='x'?'Left':'Top',pos=b.toLowerCase(),key='scroll'+b,old=d[key],max=h.max(d,a);if(toff){attr[key]=toff[pos]+(win?0:old-$elem.offset()[pos]);if(g.margin){attr[key]-=parseInt(targ.css('margin'+b))||0;attr[key]-=parseInt(targ.css('border'+b+'Width'))||0}attr[key]+=g.offset[pos]||0;if(g.over[pos])attr[key]+=targ[a=='x'?'width':'height']()*g.over[pos]}else{var c=targ[pos];attr[key]=c.slice&&c.slice(-1)=='%'?parseFloat(c)/100*max:c}if(g.limit&&/^\d+$/.test(attr[key]))attr[key]=attr[key]<=0?0:Math.min(attr[key],max);if(!i&&g.queue){if(old!=attr[key])animate(g.onAfterFirst);delete attr[key]}});animate(g.onAfter);function animate(a){$elem.animate(attr,f,g.easing,a&&function(){a.call(this,e,g)})}}).end()};h.max=function(a,b){var c=b=='x'?'Width':'Height',scroll='scroll'+c;if(!$(a).is('html,body'))return a[scroll]-$(a)[c.toLowerCase()]();var d='client'+c,html=a.ownerDocument.documentElement,body=a.ownerDocument.body;return Math.max(html[scroll],body[scroll])-Math.min(html[d],body[d])};function both(a){return typeof a=='object'?a:{top:a,left:a}}})(jQuery);
+
+/**
+ * jQuery.LocalScroll
+ * Copyright (c) 2007-2010 Ariel Flesler - aflesler(at)gmail(dot)com | http://flesler.blogspot.com
+ * Dual licensed under MIT and GPL.
+ * Date: 05/31/2010
+ * @author Ariel Flesler
+ * @version 1.2.8b
+ **/
+;(function(b){function g(a,e,d){var h=e.hash.slice(1),f=document.getElementById(h)||document.getElementsByName(h)[0];if(f){a&&a.preventDefault();var c=b(d.target);if(!(d.lock&&c.is(":animated")||d.onBefore&&!1===d.onBefore(a,f,c))){d.stop&&c._scrollable().stop(!0);if(d.hash){var a=f.id==h?"id":"name",g=b("<a> </a>").attr(a,h).css({position:"absolute",top:b(window).scrollTop(),left:b(window).scrollLeft()});f[a]="";b("body").prepend(g);location=e.hash;g.remove();f[a]=h}c.scrollTo(f,d).trigger("notify.serialScroll",
+[f])}}}var i=location.href.replace(/#.*/,""),c=b.localScroll=function(a){b("body").localScroll(a)};c.defaults={duration:1E3,axis:"y",event:"click",stop:!0,target:window,reset:!0};c.hash=function(a){if(location.hash){a=b.extend({},c.defaults,a);a.hash=!1;if(a.reset){var e=a.duration;delete a.duration;b(a.target).scrollTo(0,a);a.duration=e}g(0,location,a)}};b.fn.localScroll=function(a){function e(){return!!this.href&&!!this.hash&&this.href.replace(this.hash,"")==i&&(!a.filter||b(this).is(a.filter))}
+a=b.extend({},c.defaults,a);return a.lazy?this.bind(a.event,function(d){var c=b([d.target,d.target.parentNode]).filter(e)[0];c&&g(d,c,a)}):this.find("a,area").filter(e).bind(a.event,function(b){g(b,this,a)}).end().end()}})(jQuery);
+
+// Initialize all .smoothScroll links
+jQuery(function($){ $.localScroll({filter:'.smoothScroll'}); });
+
+});//]]>  
+
+</script>
+
+    
+</head>
+<body>
+
+<h1><a name="pagetop"></a></h1>
+<div id="header"><center>
+    <div><font color="darkblue" size=+1><b>COH Employee Handbook</b></font></div>
+        <div id="navWrap">
+            <div id="nav">
+              <b>
+                   <a href="index.html" class="smoothScroll">Home</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                   <a href="municipal_employee_Guide.html#pagetop" class="smoothScroll">Top</a>
+                </b>      
+                <br class="clearLeft" />
+            </div>
+        </div>
+    </center></div>
+     </div>
+                        <font size=+.5>
+<ul>
+<li><a href="municipal_employee_Guide.html#Introduction">Introduction</a></li>
+<li><a href="municipal_employee_Guide.html#Section_I_-_Civil_Service_System">Section I – Civil Service System</a></li>
+<ul>
+<li><a href="municipal_employee_Guide.html#What_is_a_Civil_Service_System">What is a Civil Service System?</a></li>
+<li><a href="municipal_employee_Guide.html#Who_Does_Not_Have_Civil_Service_Protection">Who Does Not Have Civil Service Protection?</a></li>
+</ul>
+<li><a href="municipal_employee_Guide.html#Section_II_-_Employment">Section II– Employment</a></li>
+<ul>
+<li><a href="municipal_employee_Guide.html#Employment_Status">Employment Status</a></li>
+<li><a href="municipal_employee_Guide.html#Classification">Classification</a></li>
+<li><a href="municipal_employee_Guide.html#Financial_Disclosure">Financial Disclosure</a></li>
+<li><a href="municipal_employee_Guide.html#Job_Postings">Job Postings</a></li>
+<li><a href="municipal_employee_Guide.html#Transfers,_Promotions,_and_Demotions_">Transfers, Promotions, and Demotions</a></li>
+<li><a href="municipal_employee_Guide.html#Employee_Records">Employee Records</a></li>
+<li><a href="municipal_employee_Guide.html#Union_Membership">Union Membership</a></li>
+</ul>
+<li><a href="municipal_employee_Guide.html#Section_III_-_Employee_Relations">Section III – Employee Relations</a></li>
+<ul>
+<li><a href="municipal_employee_Guide.html#Whats_Expected_of_You">What’s Expected of You</a></li>
+<li><a href="municipal_employee_Guide.html#Grievance_Procedure">Grievance Procedure</a></li>
+<li><a href="municipal_employee_Guide.html#Discrimination">Discrimination</a></li>
+<li><a href="municipal_employee_Guide.html#Reassignment_of_Duties">Reassignment of Duties</a></li>
+<li><a href="municipal_employee_Guide.html#Resignation">Resignation</a></li>
+</ul>
+<li><a href="municipal_employee_Guide.html#Section_IV_-_Your_Pay">Section IV – Your Pay</a></li>
+<ul>
+<li><a href="municipal_employee_Guide.html#Compensation">Compensation</a></li>
+<li><a href="municipal_employee_Guide.html#Longevity_Pay">Longevity Pay</a></li>
+<li><a href="municipal_employee_Guide.html#Your_Paycheck">Your Paycheck</a></li>
+<li><a href="municipal_employee_Guide.html#Holiday_Pay">Holiday Pay</a></li>
+<li><a href="municipal_employee_Guide.html#Overtime_Pay">Overtime Pay</a></li>
+</ul>
+<li><a href="municipal_employee_Guide.html#Section_V_-_Your_Benefits">Section V – Your Benefits</a></li>
+<ul>
+<li><a href="municipal_employee_Guide.html#Benefits">Benefits</a></li>
+<li><a href="municipal_employee_Guide.html#Pension">Pension</a></li>
+<li><a href="municipal_employee_Guide.html#Employee_Assistance_Program">Employee Assistance Program</a></li>
+<li><a href="municipal_employee_Guide.html#Long-Term_Disability">Long-Term Disability</a></li>
+<li><a href="municipal_employee_Guide.html#Defined_Contribution_/_457_Savings_Plan">Defined Contribution / 457 Savings Plan</a></li>
+<li><a href="municipal_employee_Guide.html#Municipal_Employees_Federal_Credit_Union">Municipal Employees Federal Credit Union</a></li>
+<li><a href="municipal_employee_Guide.html#Transportation_Benefit">Transportation Benefit</a></li>
+<li><a href="municipal_employee_Guide.html#Employee_Recognition">Employee Recognition</a></li>
+<li><a href="municipal_employee_Guide.html#Employee_Communications">Employee Communications</a></li>
+</ul>
+<li><a href="municipal_employee_Guide.html#Section_VI_-_Time_Off">Section VI – Time Off</a></li>
+<ul>
+<li><a href="municipal_employee_Guide.html#Vacation">Vacation</a></li>
+<li><a href="municipal_employee_Guide.html#Holidays">Holidays</a></li>
+<li><a href="municipal_employee_Guide.html#Sick_Leave">Sick Leave</a></li>
+<li><a href="municipal_employee_Guide.html#Wellness_Leave">Wellness Leave</a></li>
+<li><a href="municipal_employee_Guide.html#Family_and_Medical_Leave">Family and Medical Leave</a></li>
+<li><a href="municipal_employee_Guide.html#Lunch_and_Rest_Breaks">Lunch and Rest Breaks</a></li>
+<li><a href="municipal_employee_Guide.html#Death_in_Family">Death in Family</a></li>
+<li><a href="municipal_employee_Guide.html#Military_Leave">Military Leave</a></li>
+<li><a href="municipal_employee_Guide.html#Leave_of_Absence_without_Pay">Leave of Absence Without Pay</a></li>
+</ul>
+<li><a href="municipal_employee_Guide.html#Section_VII_-_While_You_Are_at_Work_">Section VII – While You Are at Work</a></li>
+<ul>
+<li><a href="municipal_employee_Guide.html#Reporting_to_Work">Reporting to Work</a></li>
+<li><a href="municipal_employee_Guide.html#Houston_Employee_Assessment_and_Review_(HEAR)_Process">Houston Employee Assessment and Review (HEAR) Process</a></li>
+<li><a href="municipal_employee_Guide.html#Drug_Detection_and_Deterrence_Policy">Drug Detection and Deterrence Policy</a></li>
+<li><a href="municipal_employee_Guide.html#Alcohol">Alcohol</a></li>
+<li><a href="municipal_employee_Guide.html#Safety">Safety</a></li>
+<li><a href="municipal_employee_Guide.html#Workers_Compensation">Workers’ Compensation</a></li>
+<li><a href="municipal_employee_Guide.html#Training">Training</a></li>
+<li><a href="municipal_employee_Guide.html#Voting">Voting</a></li>
+<li><a href="municipal_employee_Guide.html#Jury_Service/Court_Subpoena">Jury Service/Court Subpoena</a></li>
+<li><a href="municipal_employee_Guide.html#Outside_Employment">Outside Employment</a></li>
+<li><a href="municipal_employee_Guide.html#Elective_Office">Elective Office</a></li>
+<li><a href="municipal_employee_Guide.html#Work_Attire">Work Attire</a></li>
+<li><a href="municipal_employee_Guide.html#Visitors_in_the_Workplace_">Visitors In The Workplace	</a></li>
+</ul>
+<li><a href="municipal_employee_Guide.html#Section_VIII_-_Policies">Section VIII – Policies</a></li>
+<ul>
+<li><a href="municipal_employee_Guide.html#City_Policies">City Policies</a></li>
+<li><a href="municipal_employee_Guide.html#Ethics_">Ethics</a></li>
+<li><a href="municipal_employee_Guide.html#Emergency_Situations">Emergency Situations</a></li>
+<li><a href="municipal_employee_Guide.html#Use_of_City_Communication_Systems">Use of City Communication Systems</a></li>
+<li><a href="municipal_employee_Guide.html#Operation_of_City_Vehicles_">Operation of City Vehicles</a></li>
+<li><a href="municipal_employee_Guide.html#Solicitation_and_Distribution">Solicitation and Distribution</a></li>
+<li><a href="municipal_employee_Guide.html#Gift_Policy">Gift Policy</a></li>
+<li><a href="municipal_employee_Guide.html#Smoking_Policy">Smoking Policy</a></li>
+<li><a href="municipal_employee_Guide.html#Community/Civic_Affairs">Community/Civic Affairs</a></li>
+<li><a href="municipal_employee_Guide.html#Hiring_of_Relatives">Hiring of Relatives</a></li>
+</ul>
+</ul>
+                                  </font>
+<font color="black" size = +.5>
+<h1><a name="Introduction">Introduction</a></h1>
+
+<p>This employee guide is designed to acquaint you with the City of Houston's policies and procedures and to provide you with information about our benefits and other 
+issues related to your employment with us. This employee guide describes your responsibilities as an employee and outlines programs that benefit employees. 
+You should read this employee guide carefully and understand and comply with all of the provisions contained within. 
+If you have questions, please ask your supervisor or your department human resources representative. Much of the information found in this guide is based on existing 
+<a href="http://www.houstontx.gov/policies/mayors_policies.html">mayor's policies</a>, 
+<a href="http://www.houstontx.gov/policies/executive_orders.html">executive orders</a>, 
+<a href="http://www.houstontx.gov/policies/administrative_policies.html">administrative procedures</a>, as well as 
+<a href="https://www2.municode.com/library/tx/houston/codes/code_of_ordinances?nodeId=COOR_CH14CISE">Chapter 14</a> of the
+<a href="https://www2.municode.com/library/tx/houston/codes/code_of_ordinances?nodeId=10123">
+City of Houston Code of Ordinances</a>. The executive orders, administrative procedures, and mayor's policies, can be found on the city's intranet 
+<a href="http://citypointe/Pages/default.aspx">http://citypointe/Pages/default.aspx</a> , also known as CityPointe Intranet Portal. 
+Chapter 14 can be found on the city's website <a href="http://www.houstontx.gov/">http://www.houstontx.gov</a> under "Business" and "Code of Ordinances." 
+This guide's contents apply to municipal employees only, and generally not to police officers or firefighters.</p>
+
+<p>Each department may have policies that are specific only to that department. 
+Departments may create and enforce their own policies, which are usually more specific than citywide policies. 
+For information about your department policies, see your supervisor or manager, or contact your department human resources representative.</p>
+
+<h1><a name="Section_I_-_Civil_Service_System">Section I - Civil Service System</a></h1>
+
+<h2><a name="What_is_a_Civil_Service_System">What is a Civil Service System?</a></h2>
+
+<p>A civil service system generally means employment in government with such positions filled on merit as a result of a competitive examination or screening. 
+Civil service protected employees have certain expectations regarding their employment status, including just cause to discipline. 
+City of Houston's civil service protected employees have the right to an appeal hearing before the Civil Service Commission for an indefinite suspension (termination). 
+City of Houston's civil service protected employees also have the right to grieve a written reprimand (Reminder II), Houston Employee Assessment and Review (HEAR) 
+with an overall rating of "below expectations" or lower, non- selection of a promotion to a referred position as well as the ability to grieve other matters (see Section III).</p>
+
+<p>You may be a civil service protected employee under the City Charter, Article V (a). However, not all employees are civil service protected.	
+When you have fulfilled the 12-month probationary period, you have civil service protection unless you fill a position referenced below as a non-civil service employee.</p>
+
+<h2><a name="Who_Does_Not_Have_Civil_Service_Protection">Who Does Not Have Civil Service Protection?</a></h2>
+
+<p>The following classifications of employees do not have civil service protection:</p>
+<ul>
+<li>All probationary employees during their first year of employment</li>
+<li>All appointed officials including department directors</li>
+<li>All executive level employees</li>
+<li>All assistant city attorneys and all professional, non-clerical staff of the Legal Department</li>
+<li>Part-time employees Temporary employees (seasonal, limited duration, and those without reasonable expectation to continue employment indefinitely)</li>
+<li>Emergency employees (those hired for limited duration in an emergency situation without expectation of continued employment)</li>
+</ul>
+<p>Non-civil service protected employees are considered to be "at will" employees and may be terminated or have their status changed for any reason without notice and 
+without appeal or review rights.</p>
+
+<h1><a name="Section_II_-_Employment">Section II - Employment</a></h1>
+
+
+<h2><a name="Employment_Status">Employment Status</a></h2>
+
+<p>You may be eligible for benefits or overtime depending on your employment status. Regardless of your civil service status, you may be one of the following:</p>
+<ul>
+<li><i><b>Full Time</b></i> - You will be regularly scheduled to work at least a 40-hour workweek.</li>
+<li><i><b>Part Time</b></i> - You will be regularly scheduled to work less than a 40-hour workweek.</li>
+<li><i><b>Exempt</b></i> - You qualify for exempt status because of the job duties you perform and you will not be paid overtime irrespective of hours worked.</li>
+<li><i><b>Nonexempt</b></i> - You perform duties for the city that are not considered to be exempt and you will be paid overtime or accrue compensatory time at 
+1.5 times your regular hourly rate for all hours paid in excess of 40 in any given workweek.</li>
+<li><i><b>Grant-Funded Positions</b></i> - May or may not be civil service protected and could be any of the above. 
+However, even with civil service protection, the expectation of continued employment is limited by the continuation of grant funding for the position.</li>
+</ul>	
+
+<h2><a name="Classification">Classification</a></h2>
+
+<p>All city jobs are included in a classification system that groups similar jobs within classes and pay grades. Each particular job category within a class of jobs is called a 
+classification. You have been hired to fill one of the positions within a classification.</p>
+
+<h2><a name="Financial_Disclosure">Financial Disclosure</a></h2>
+
+<p>Executive-level employees are required to sign an executive-level acknowledgement form regarding their employment status, as well as to submit an annual financial disclosure statement. 
+Refer to 
+<a href="https://www2.municode.com/library/tx/houston/codes/code_of_ordinances?nodeId=COOR_CH18ETFIDI">Chapter 18, 
+"Ethics and Financial Disclosure" of the Code of Ordinances</a>.</p>
+
+<h2><a name="Job_Postings">Job Postings</a></h2>
+
+<p>Notices of job opportunities are posted on the Human Resources Department website at <a href="http://www.houstonhumanresources.org/">www.houstonhumanresources.org</a>. 
+Job postings are updated weekly and only online application submissions will be accepted.</p>
+
+<h2><a name="Transfers,_Promotions,_and_Demotions_">Transfers, Promotions, and Demotions</a></h2>
+
+<p>In order to be considered for a promotion, lateral transfer/reclassification or voluntary demotion into another city department or within your own department, you must 
+complete and submit an online application for the position to the Human Resources Department. All hiring and salary decisions are made by individual departments. 
+The three personnel action types involved in this process are defined below:</p>
+<ul>
+<li>Lateral transfer or reclassification - a change of department and/or classification or position with no change in pay grade.</li>
+
+<li>Promotion - a change to a higher classification and a higher pay grade.</li>
+
+<li>Demotion - a change to a lower classification and/or pay grade. This may also include a reduction in salary.</li>
+</ul>
+
+<h2><a name="Employee_Records">Employee Records</a></h2>
+
+<p>Human Resources Department maintains the official city personnel files. As an employee, you may review your personnel file at the 
+Records Division located at 611 Walker Street. Another department director or his/her designee may view your file if you are being considered for transfer or promotion to that department. 
+Your supervisor may also review your file. Customer service hours are between 10 a.m. and 3 p.m. weekdays excluding city-declared holidays.</p>
+
+<h2><a name="Union_Membership">Union Membership</a></h2>
+
+<p>The Houston Organization of Public Employees (HOPE), a recognized employee association, signed a Meet and Confer Agreement ("Contract") with the 
+City of Houston in August 2011 that was subsequently approved by City Council. HOPE is the Sole and Exclusive Bargaining Agent (SEBA) for this contract, which expired 
+on June 30, 2015.</p>
+
+<p>Inasmuch as Texas is a "right to work" state, municipal employees are not required to join HOPE. Anyone who is interested in HOPE membership may contact them directly. 
+All municipal members, regardless of whether they formally join HOPE, are members of the bargaining unit. 
+The bargaining unit is all municipal employees with the exception of department directors, elected officials, employees serving city council and within the offices of the mayor, and 
+classified members of the Police and Fire departments.</p>
+
+<p>Additionally, HOPE members may be entitled to paid, excused absences from work to participate in HOPE activities and also in certain community projects.</p>
+
+<p>For additional information about HOPE and the existing contract, you may contact HOPE or visit their website at <a href="http://www.hopetx.org/">www.hopetx.org</a>.</p>
+
+<h1><a name="Section_III_-_Employee_Relations">Section III - Employee  Relations</a></h1>
+
+<h2><a name="Whats_Expected_of_You">What's Expected of You</a></h2>
+
+<p>Employees truly communicate the spirit and pride of the City of Houston to its residents and the general public. Therefore, it is important as an employee of the city serving the public, 
+that you always demonstrate patience, courtesy, respect, and understanding to all customers, both internal and external. We must treat everyone as a valued customer. 
+You can do this by delivering services quickly and by treating all people with courtesy and respect. 
+Not only is it important that the public is treated this way, but it is also required that you treat all other employees with the same respect and courtesy.</p>
+
+<p>The City of Houston Code of Ordinances, as well as the policies and procedures of the city and your department, contain many provisions regarding your employment, as well as 
+various rules you are expected to follow. We expect you to be productive, to adhere to the rules and policies of each department and the city, and to demonstrate a considerate, 
+cooperative, and constructive attitude to the public and your fellow employees.	
+It is your duty to become familiar with these policies and procedures, and if you have any questions to ask your supervisor or manager.</p>
+
+<p>Poor performance, inappropriate work behavior, and poor attendance are issues your supervisor could address with disciplinary action. 
+We expect you to report when scheduled and be ready to work a full productive day. You are required to follow your management's directions, be cooperative with them and your fellow 
+employees, and work in a professional and polite manner. You are responsible for familiarizing yourself with the policies of the city and your department, as not everything is covered in 
+this manual and those policies are subject to change. If you violate policies or do not perform as required, you may be subject to disciplinary actions including indefinite suspension 
+(termination). A significant infraction or continuing infractions after previous corrective action could result in indefinite suspension (termination). 
+The city reserves the right to discipline you for any violations of these expectations or rules/policies when necessary, in accordance with existing policies, procedures, rules, 
+and regulations.</p>
+
+<h2><a name="Grievance_Procedure">Grievance Procedure</a></h2>
+
+<p>Civil service protected employees who believe they have not been treated fairly as a result of any of the issues listed below may file a grievance and pursue it through 
+the grievance process.  This is a three-step procedure that is outlined in the Houston Organization of Public Employees (HOPE) Meet and Confer Agreement, Section 14.</p>
+
+<p>The grievable issues are:</p>
+<ul>
+<li>You receive a Written Reprimand/Reminder II</li>
+<li>You receive a Decision-Making Leave (DML) Day</li>
+<li>You receive a temporary suspension of up to 15 calendar days</li>
+<li>You are not selected for promotion to a referred position</li>
+<li>You receive a Houston Employee Assessment and Review (HEAR) evaluation with an overall rating of 2.99 or less (below expectations)</li>
+<li>Your department fails to give you a Houston Employee Assessment and Review (HEAR) evaluation more than six months past its due date</li>
+<li>Your department fails to pay you overtime or compensatory time if eligible, appropriate, and worked</li>
+<li>You are working under hazardous conditions not intrinsic to your job</li>
+</ul>
+
+<p><b>Civil Service protected employees serving City Council and within the offices of the mayor are governed by the grievance procedure outlined in Chapter 14, 
+Sections 50 through 55 of the Code of Ordinances.</b></p>
+
+<p>Each department has an assigned grievance coordinator. Ask your department human resources representative for the name of your department coordinator. 
+Your coordinator will answer questions regarding the grievance process as well as provide you with the forms for filing the grievance. 
+Each of the three steps is time sensitive, so you need to respond quickly. If you have further questions, you may contact the Employee/Labor Relations Division of the 
+Human Resources Department at (832) 393-6175.</p>
+
+<p>Other employee concerns not specified as grievable issues may be addressed through your department's employee concerns program. For information about filing a concern please 
+contact your department grievance coordinator or the Employee/Labor Relations Division of the Human Resources Department at (832) 393-6175.</p>
+
+<h2><a name="Discrimination">Discrimination</a></h2>
+
+<p>The City of Houston is committed to providing a work environment that is free from discrimination and harassment. Discrimination and harassment based upon sex, race, color, ethnicity, national origin, age, religion, disability, sexual orientation, genetic information, gender identity, pregnancy, or other legally protected characteristic, is a violation of City of Houston's 
+<a href="http://www.houstontx.gov/execorders/1-50.pdf">Workplace Discrimination and Harassment Policy, Executive Order 1-50</a> and will not be tolerated. Formal complaints may be presented to any of the following:</p>
+<ul>
+<li>the Office of Inspector General (OIG) - (832) 394-5100, located on the fourth floor of 900 Bagby Street, Houston, Texas, or</li>
+<li>the Employee's Designated Departmental Representative (DDR), or</li>
+<li>the City of Houston Sexual Harassment Hotline - (832) 393-7200, operated by the Human Resources Department Employee/Labor Relations Division located on the fourth floor of 611 Walker, 
+Houston, Texas.</li>
+</ul>
+
+<p>Additionally, the Houston Code of Ordinances states that it is the policy of the city to not discriminate in city employment and employment opportunities on the basis of race, color, national origin, marital status, religion, age, gender, sexual orientation and gender identity, disability, military service, except as required by federal or state law or court order.</p>
+
+<p><b>Refer to Workplace Discrimination and Harassment, Executive Order 1-50 and/or 
+<a href="https://www2.municode.com/library/tx/houston/codes/code_of_ordinances?nodeId=COOR_CH2AD_ARTXIVNSCEMSECOPR">City of Houston Code of Ordinances, Chapter 2 
+- Administration,&nbsp; Article XIV - Non-Discrimination in City Employment, City Services and Contracting Practices</a>.</b></p>
+
+<h2><a name="Reassignment_of_Duties">Reassignment of Duties</a></h2>
+
+<p>Your department director may reassign you within the same department if it is considered to be in the best interest of the city. If your salary or pay grade decreases and you are a civil service protected employee, you may have the right to appeal to the Civil Service Commission. Also, your department director may change your days off or your work schedule without your consent.</p>
+
+<h2><a name="Resignation">Resignation</a></h2>
+
+<p>If you resign from the city, you must submit a written resignation to your supervisor, which will be placed in your permanent personnel file. Once you have submitted a written resignation, it may be withdrawn only at the discretion of the department director. Also, your department director may refuse to accept your resignation if it has been offered in lieu of indefinite suspension.</p>
+
+<p><b>Refer to Termination: 
+<a href="http://www.houstontx.gov/mayorspolicy/701.pdf">Resignation, Mayor's Policy No. 701.</a></b></p>
+
+<h1><a name="Section_IV_-_Your_Pay">Section IV - Your Pay</a></h1>
+
+<h2><a name="Compensation">Compensation</a></h2>
+
+<p>The city considers your base pay and benefits to be two major components of a total compensation package. Your base pay is the largest component. Your pay falls within a salary range of an established pay grade which is assigned to your job classification.
+More specific information regarding the city's compensation program can be found in the city's Code of Ordinances, Chapter 14, Sections 71 through 74, "Compensation Plan." Additionally, pay grades, job descriptions and job information such as whether the job is exempt from overtime can be found at <a href="http://www.houstonhumanresources.org/">www.houstonhumanresources.org</a>.</p>
+
+<h2><a name="Longevity_Pay">Longevity Pay</a></h2>
+
+<p>The city awards $2 per pay period for every complete year of service to full-time permanent employees.  Longevity pay appears as a separate item on your pay stub. It increases automatically each year on the first pay period after your employment anniversary date.</p>
+
+<h2><a name="Your_Paycheck">Your Paycheck</a></h2>
+
+<p>The workweek is Saturday through Friday. Pay periods are two weeks in length. Paydays are every other Friday. You are paid the following Friday for the previous two- week pay period.</p>
+
+<p>You may receive your paycheck via direct deposit or an ATM pay card. Paper checks are no longer issued to employees. Direct deposit can save you time and a trip to the bank. Check with your department payroll representative for details.</p>
+
+<p>Your pay stub describes how your net pay, or take home pay, is calculated. It lists your pay types, deductions (federal income tax, social security, benefits deductions, deferred compensation contributions, credit union loans, Medicare, pension contributions, etc.), and time off accruals, among other items. To access or research your paycheck and view information about your pay, deductions, and leave accruals, go to <a href="https://portal.houstontx.gov/">https://portal.houstontx.gov</a>.</p>
+
+<h2><a name="Holiday_Pay">Holiday Pay</a></h2>
+
+<p>Because the City is responsible for providing vital services to more than 2 million residents 24 hours a day, seven days a week, many employees are required to work on holidays they would otherwise spend at home with their families. Therefore, the City provides special compensation to those who work holidays.</p>
+
+<p>The following describes how you will be compensated with regards to city council- declared holidays:</p>
+<ol>
+<li>If the holiday falls on a day you are scheduled to work, and you are not required to work on the holiday, you will receive holiday pay at straight time for your scheduled hours.</li>
+<li>If the holiday falls on your day off and you are not required to work, you will receive holiday pay or you will accrue a holiday at straight time for the number of hours you normally work.</li>
+<li>If you are required to work on a holiday, whether you are scheduled to work or not, you will be paid straight time for all the hours you work, and will either be paid holiday premium or you may accrue time off at one times the number of hours you work that day. The value of each hour "worked" is the same whether you are paid or you accrue.</li>
+<li>If you are required to work on a holiday, whether you are scheduled to work or not, and are notified less than 24 hours before the time you are required to report to work (short notice call to duty) you will be paid straight time for all the hours you work, and will either be paid short-notice premium pay or accrue time off at 1.5 times the number of hours you work that day. Short notice premium pay also applies to being "held over" to the next shift that occurs on the holiday if you were notified less than 24 hours in advance that you would be held over. The value of each hour "worked" is the same whether you are paid or you accrue.</li>
+<li>Your department director (or designee) still decides if you will be paid holiday premium or will accrue time for hours worked on a holiday. Your supervisor should notify you at the time you are told you are required to work whether you will be paid or accrue hours for future use.</li>
+<li>You have 180 days to use accrued holidays. If you do not use accrued holiday hours within 180 days, you will be paid for those hours. Every effort must be made by both you and your supervisor to use the time within the 180 days. Any unused hours will not be paid when you terminate employment.</li>
+</ol>
+
+<h2><a name="Overtime_Pay">Overtime Pay</a></h2>
+
+<p>The rule for overtime, according to federal law, is that if you are nonexempt and work more than 40 hours in one workweek, you will be paid 1.5 times your regular rate of pay for all of the hours worked over 40. Overtime is calculated separately for each workweek.</p>
+
+<p>If you are a nonexempt employee, you may receive compensatory time instead, at the discretion of your department. Such compensation will be at 1.5 times for each hour of overtime worked. You may save or use earned compensatory time in accordance with the provisions of federal law and city ordinance.</p>
+
+<p>In certain extraordinary cases, exempt employees may be given compensatory time off at the rate of one overtime hour for each hour of time worked in excess of their customary schedules. Compensatory time off for exempt employees must be requested in writing by the department director and requires the advance approval of the Human Resources Director (refer to 
+<a href="https://www2.municode.com/library/tx/houston/codes/code_of_ordinances?nodeId=COOR_CH14CISE_ARTIIRU_DIV14RU14.LEABOUEM_S14-168ATWOOVCOET">Chapter 14, Section 168 of the Code of Ordinances</a>, and the HOPE Meet and Confer Agreement). Compensatory time for exempt employees must be used within 180 days of its accrual, subject to certain conditions, or it shall be paid in cash.</p>
+
+<p>If you have questions regarding the accrual, scheduling and/or the use of compensatory time off, please check with your supervisor or department payroll representative.</p>
+
+<h1><a name="Section_V_-_Your_Benefits">Section V - Your  Benefits</a></h1>
+
+<h2><a name="Benefits">Benefits</a></h2>
+
+<p>The city offers an outstanding comprehensive benefits program that is competitive with other employers. Regular, full-time employees and designated PT30 employees are eligible to 
+participate in these programs, as described in each plan. Some of the available benefits are:</p>
+<ul>
+<li>Medical, Dental and Vision coverage</li>
+<li>Life Insurance (Basic and Voluntary)</li>
+<li>Health Flexible Spending Plan</li>
+<li>Dependent Care Reimbursement Plan</li>
+<li>Long-term Disability coverage (for certain employees)</li>
+<li>Supplemental Insurance Programs</li>
+<li>Employee Assistance Program (EAP)</li>
+<li>Workers' Compensation</li>
+</ul>
+
+<p>A complete description of all benefits can be found at
+<a href="http://www.houstonhumanresources.org/">www.houstonhumanresources.org</a>. For more information, call (832) 393-6000.</p>
+
+<h2><a name="Pension">Pension</a></h2>
+
+<p>The city offers an excellent defined benefit pension plan for eligible full-time municipal employees. 
+The plan offers retirement income based on a percentage of your pre- retirement salary. It is calculated on the average of your highest 78 pay periods. 
+The city makes an annual contribution. The Houston Municipal Employee Pension System administers the benefits.</p>
+
+<p>Other features include disability benefits, survivor benefits for participants, a Deferred Retirement Option Plan (DROP), permissive military service purchase, reinstatement or 
+conversion of eligible service time through purchase agreements, and survivor benefits for covered surviving spouses and dependent children. 
+After retirement, your pension increases via an annual cost of living feature. 
+Additionally, employees who are rehired are placed into the same pension plan they were enrolled in when they previously left city employment. 
+Contact the HMEPS office for specific benefit information at (713) 595-0100 or visit its website at <a href="http://www.hmeps.org/">www.hmeps.org</a>.</p>
+
+<h2><a name="Employee_Assistance_Program">Employee Assistance Program</a></h2>
+
+<p>The <a href="http://www.houstontx.gov/hr/eap.html">Employee Assistance Program (EAP)</a> is a free, strictly confidential employee benefit, 
+which provides assessment and short-term counseling to employees, their spouses and dependents. 
+It is staffed by highly trained masters and doctoral level clinicians who will listen to your concerns and quickly refer you to in-person counseling and other resources for:</p>
+
+<ul>
+<li>Alcohol or other drug abuse</li>
+<li>Anger</li>
+<li>Career struggles/job burn-out</li>
+<li>Death, grief, and/or loss</li>
+<li>Depression</li>
+<li>Domestic violence</li>
+<li>Financial consultation (budgeting, saving for college)</li>
+<li>Health concerns</li>
+<li>Interpersonal conflicts</li>
+<li>Marriage or family problems</li>
+<li>Legal concerns (personal, non-employment related)</li>
+<li>Stress and anxiety</li>
+<li>Workplace conflicts</li>
+<li>Work-Life Issues</li>
+</ul>
+
+<p>Counseling services are limited to six (6) sessions with an EAP counselor per issue. If an EAP counselor refers the employee to other resources for additional help, those resources 
+may charge for their services. EAP counselors will work with you to identify resources that are affordable or that may be partially covered by the employee's health insurance.</p>
+
+<p>Call anytime, the service is available 24/7. An employee or an employee's family member can access the program by calling the toll-free number: (855) 378-7485, TDD: (800) 697-0353. 
+For additional electronic resources visit <a href="http://www.guidanceresources.com/">www.guidanceresources.com</a> (City of Houston Web ID: HOUSTONEAP).</p>
+
+<h2><a name="Long-Term_Disability">Long-Term Disability</a></h2>
+
+<p>The City of Houston provides 
+<a href="http://cohemployeenews.com/plans/disability">long-term disability benefits</a> to municipal employees and classified firefighters who have completed one year of service and who 
+are participants in the Compensable Sick Leave (CSL) Plan. Long-term disability benefits provide income if you are unable to work for an extended period of time due to an injury or illness. 
+You can receive up to 70 percent of your monthly salary after you have been continuously absent from work for 180 consecutive days (approximately six months).</p>
+
+<p>Long-Term Disability (LTD) benefits are also paid to employees who have work-related injuries. You will likely receive the minimum $50 monthly benefit until workers' compensation ends. 
+At that time the LTD benefit will be based on 50 percent or 70 percent of pre-disability pay. For more information you may contact the human resources representative at (832) 393-6114.
+
+</p><h2><a name="Defined_Contribution_/_457_Savings_Plan">Defined Contribution / 457 Savings Plan</a></h2>
+
+<p>Government employees have their own defined contribution/savings plan. The city  offers a 457(b) plan, which is a pre-tax savings program for employees of local, state and 
+federal governments. This plan is similar to a 401(k) or 403(b) plan. You can elect  to defer a specific amount of your paycheck on a pre-tax basis through payroll deduction. 
+The taxes on your contributions are deferred until withdrawal, as well as the taxes on any investment earnings from these contributions. You can borrow against  your plan balance. 
+You select from several investment options. Your money is eligible to be rolled over into an IRA or another qualified, pre-tax plan when your employment with the city ends. 
+When you withdraw your money, you will be responsible for paying the normal income tax. The 457(b) plan is a great way to save for your financial security during your retirement years. 
+For more information, call (713) 837-9664, or visit their website at <a href="http://www.gwrs.com/">www.gwrs.com</a>.</p>
+
+<h2><a name="Municipal_Employees_Federal_Credit_Union">Municipal Employees Federal Credit Union</a></h2>
+
+<p>The Houston Metropolitan Federal Credit Union is open for membership to all city employees. The credit union offers savings accounts, payroll deduction, checking accounts, 
+IRAs, certificates of deposit, new and used auto loans, signature loans, and credit cards. You may apply for a loan after one year of continuous service with the city. 
+The credit union is not operated by the city. For further information, call (713)  699-0795 or (713) 224-6566, or visit <a href="http://www.hmefcu.org/">www.hmefcu.org</a>.</p>
+
+<h2><a name="Transportation_Benefit">Transportation Benefit</a></h2>
+
+<p>In order to alleviate congestion in the downtown area, the City of Houston offers flexible work schedules, free parking or subsidies for public transportation for many employees 
+who work in the area. For more information about this benefit, consult your department transportation representative.</p>
+
+<h2><a name="Employee_Recognition">Employee Recognition</a></h2>
+
+<p>It is important to recognize the ideas and achievements of employees. Here are a few of the ways we do that:</p>
+<ul>
+<li><i><b>Mayor's Service Awards: </b></i>The City of Houston recognizes the value of your service and gives individual awards to employees with five, 10, 15, 20, 25, 30, 35, 40, 45, and 50 
+or more years of continued service. Departments present five-year to 25- year service awards to their employees annually. The Mayor's Office and Human Resources 
+Department host an annual luncheon for employees with 30 and more years of service.<br>  
+Visit <a href="http://cohemployeenews.com/events-activities/mayor-s-service-awards">http://cohemployeenews.com/events-activities/mayor-s-service-awards</a> for more information.</li>
+<li><i><b>Bravo Awards: </b></i>The highest recognition program for city employees. Awards are given annually to employees who do outstanding work and contribute to their communities. 
+<br>
+Visit <a href="http://cohemployeenews.com/events-activities/bravo-awards">http://cohemployeenews.com/events-activities/bravo-awards</a> for more information.</li>
+</ul>
+
+<h2><a name="Employee_Communications">Employee Communications</a></h2>
+
+<p>The city's corporate employee communications office publishes three award-winning employee newsletters, annual and as-needed publications, and e-mail bulletins. 
+The newsletters are the online "Extra Milers," which features employees who have been recognized by the general public in letters, e-mails, and phone calls; "Benefits Pulse," 
+which helps you develop better health habits, understand your benefits and become better health care consumers; and "City Savvy," which keeps you abreast of city workplace issues.</p>
+
+<h1><a name="Section_VI_-_Time_Off">Section VI - Time Off</a></h1>
+
+<p>In addition to the benefits outlined above, the City of Houston also provides paid time off, subject to management approval.</p>
+
+<h2><a name="Vacation">Vacation</a></h2>
+<p>Permanent, full-time employees accumulate vacation hours each pay period. The following chart summarizes the amount of vacation hours earned per year:</p>
+
+<table style="width: 40%" align="center">
+	<tbody><tr>
+		<td style="width: 375px" class="style4">Years of Completed Service</td>
+		<td style="width: 609px" class="style4">Vacation Hours Earned per Year</td>
+	</tr>
+	<tr>
+		<td style="width: 375px" valign="middle" class="style3">Year 1-4</td>
+		<td style="width: 609px" valign="middle" class="style3">80</td>
+	</tr>
+	<tr>
+		<td style="width: 375px" valign="middle" class="style3">Year 5</td>
+		<td style="width: 609px" valign="middle" class="style3">120</td>
+	</tr>
+	<tr>
+		<td style="width: 375px" valign="middle" class="style3">Year 6 and 7</td>
+		<td style="width: 609px" valign="middle" class="style3">128</td>
+	</tr>
+	<tr>
+		<td style="width: 375px" valign="middle" class="style3">Year 8 and 9</td>
+		<td style="width: 609px" valign="middle" class="style3">136</td>
+	</tr>
+	<tr>
+		<td style="width: 375px" valign="middle" class="style3">Year 10 and 11</td>
+		<td style="width: 609px" valign="middle" class="style3">144</td>
+	</tr>
+	<tr>
+		<td style="width: 375px" valign="middle" class="style3">Year 12</td>
+		<td style="width: 609px" valign="middle" class="style3">152</td>
+	</tr>
+	<tr>
+		<td style="width: 375px" valign="middle" class="style3">Year 13</td>
+		<td style="width: 609px" valign="middle" class="style3">160</td>
+	</tr>
+	<tr>
+		<td style="width: 375px" valign="middle" class="style3">Year 14</td>
+		<td style="width: 609px" valign="middle" class="style3">168</td>
+	</tr>
+	<tr>
+		<td style="width: 375px" valign="middle" class="style3">Year 15</td>
+		<td style="width: 609px" valign="middle" class="style3">176</td>
+	</tr>
+	<tr>
+		<td style="width: 375px" valign="middle" class="style3">Year 16</td>
+		<td style="width: 609px" valign="middle" class="style3">184</td>
+	</tr>
+	<tr>
+		<td style="width: 375px" valign="middle" class="style3">Year 17</td>
+		<td style="width: 609px" valign="middle" class="style3">192</td>
+	</tr>
+	<tr>
+		<td style="width: 375px" valign="middle" class="style3">Year 18+</td>
+		<td style="width: 609px" valign="middle" class="style3">200</td>
+	</tr>
+</tbody></table>
+
+<p>You may use earned vacation after six months of employment. You may take up to 90 days of vacation in a calendar year. 
+Upon termination, you are eligible to be paid for unused accrued vacation leave, as follows: 
+(1) If you were hired prior to January 1, 2000, you may accrue and carry forward from year to year a maximum of 840 vacation hours; and upon termination, you can be paid up to 720 accrued, 
+unused hours; 
+(2) If you were hired on or after January 1, 2000, you may accumulate and carry forward a maximum of 420 vacation hours; and upon termination, you can be paid up to 360 accrued, 
+unused hours.</p>
+
+<p>Part-time, seasonal, and temporary employees are not eligible for vacation leave benefits.</p>
+
+<h2><a name="Holidays">Holidays</a></h2>
+
+<p>The city observes 11 paid holidays (New Year's Day, Martin Luther King's birthday, Memorial Day, Independence Day, Labor Day, Veterans' Day, two days at Thanksgiving, 
+Christmas Eve, Christmas Day, and a floating holiday). The specific dates are subject to City Council approval each year.</p>
+
+<p>The floating holiday must be requested and approved in advance by your supervisor and taken during that calendar year. Floating holidays are not accrued.</p>
+
+<p>If you are hired on or before June 30 of the year, you will be eligible to take the floating holiday that year. If you are hired on or after July 1, 
+you will be eligible for the floating holiday in the next calendar year. A calendar showing 
+all approved city holidays is available at <a href="http://www.houstonhumanresources.org/">www.houstonhumanresources.org</a>.</p>
+
+<h2><a name="Sick_Leave">Sick Leave</a></h2>
+
+<p>The city provides paid sick leave. Sick leave is to be taken in cases when your medical or health condition renders you unable to work, 
+or for personal appointments with your health care provider. Sick leave can also be used to care for an immediate family member due to his/her illness.</p>
+
+<p>Employees hired after 1985 belong to the Compensable Sick Leave (CSL) plan.</p>
+
+<p>Employees in CSL and who are actively at work shall receive a biweekly sick leave allowance of 2.50 hours per pay period, up to a maximum of 65 hours per benefit year 
+(September 1 - August 31). 
+To encourage good attendance and help you build up security for the future, at the end of a full benefit year the City of Houston will match any sick leave hours that you have 
+accrued but not used during the year. These hours will be added to your accruals to a maximum of 1,040 hours. 
+At this point, you will continue to accrue any unused sick hours up to 65 hours for each benefit year, but the city will no longer match unused hours. 
+The 1,040-hour period is designed to provide you with enough leave for six months of illness until long-term disability benefits may begin (see Section V).</p>
+
+<p>If your CSL sick leave balance is greater than 1,040 hours at the time of your termination, you will be paid for all unused sick hours in excess of 1,040 at your current rate of pay.</p>
+
+<p>The city also rewards good attendance. The benefit year for sick leave is September 1 
+- August 31. On September 1, you will receive an award of personal leave days (eight hours) if you have good attendance in the previous benefits year, as follows:</p>
+
+<table style="width: 22%" align="center" class="style2">
+	<tbody><tr>
+		<td style="width: 156px" valign="top" class="style4">Sick Days Used</td>
+		<td valign="top" class="style4" style="width: 234px">Personal Leave Days 
+		Earned</td>
+	</tr>
+	<tr>
+		<td style="width: 156px" valign="top" class="style3">0</td>
+		<td valign="top" class="style3" style="width: 234px">3</td>
+	</tr>
+	<tr>
+		<td style="width: 156px" valign="top" class="style3">1</td>
+		<td valign="top" class="style3" style="width: 234px">2</td>
+	</tr>
+	<tr>
+		<td style="width: 156px" valign="top" class="style3">2</td>
+		<td valign="top" class="style3" style="width: 234px">1</td>
+	</tr>
+</tbody></table>
+
+<p>Personal leave days must be used during the benefit year in which they were awarded and may not be carried over.</p>
+
+<p>Sick leave absences exceeding 64 hours in one benefit year will require a health care provider's certificate to qualify for payment of accrued leave benefits if authorized. 
+You should give the certificate to your supervisor immediately upon returning to work.</p>
+
+<p>For more information regarding sick leave, contact your human resources representative.</p>
+
+<h2><a name="Wellness_Leave">Wellness Leave</a></h2>
+
+<p>Employees in the CSL plan are entitled to use up to eight hours of wellness leave during the same benefit year in which they begin their employment, 
+and up to eight hours of wellness leave in each benefit year thereafter. 
+Wellness leave is to be used for physical examinations and other preventive medical appointments and requires advance notice and documentation from the health provider.</p>
+
+<h2><a name="Family_and_Medical_Leave">Family and Medical Leave</a></h2>
+
+<p>The city observes the requirements of the Family and Medical Leave Act of 1993. 
+You may be entitled to up to 12 weeks of approved family/medical leave for the following:</p>
+<ul>
+<li>A serious health condition</li>
+<li>A serious health condition of a parent, spouse, or child</li>
+<li>The birth of your child and/or to care for such child within 12 months of birth</li>
+<li>The placement of a child with you for adoption or foster care, and/or to care for the newly placed child within 12 months of the placement</li>
+<li>Time off for "qualifying exigencies" arising out of a family member being called to active military duty status in support of a contingency operation; also, up to 
+26 weeks may be taken for caring for a family member who is recovering from a serious illness or injury sustained in the line of active military duty</li>
+</ul>
+
+<p>For additional information about FMLA, check with your supervisor or contact your department's FMLA coordinator. 
+<b>Refer to Family and Medical Leave, Administrative Procedure 3-2.</b></p>
+
+<h2><a name="Lunch_and_Rest_Breaks">Lunch and Rest Breaks</a></h2>
+
+<p>You will be allowed time for lunch and up to two rest breaks in accordance with your department's operational needs. 
+Time and frequency of the breaks may vary from one area to another. <b>Refer to Absence, Administrative Procedure 3-11.</b></p>
+
+<h2><a name="Death_in_Family">Death in Family</a></h2>
+
+<p>Employees may receive an excused absence for up to three paid calendar days with the approval of the department director in case of death in the immediate family. 
+Immediate family includes the father or father-in-law, mother or mother-in-law, sister, brother, spouse, child or step-child, grandparent and grandchild. 
+Other relatives by blood or marriage may be included if, in the opinion of the department director, the employee's presence would be appropriate given the nature of the individual 
+relationship. The department director may grant additional time in cases involving extenuating circumstances or extreme traveling distances if requested.  
+Additional time granted  must be documented as some other form of excused absence besides funeral leave.</p>
+
+<p><b>Refer to <a href="http://www.houstontx.gov/adminpolicies/3-11.pdf">Absence, Administrative Procedure 3-11.</a></b></p>
+
+<h2><a name="Military_Leave">Military Leave</a></h2>
+
+<p>You may be granted up to 15 working days of paid leave each federal fiscal year (October 1 - September 30) to meet your military obligations, according to Texas statute. 
+Present the proper military orders to your supervisor for approval in advance of your leave request, or as soon as possible. 
+If you are called to duty due to a national emergency, the City Council may grant pay differential for the time that you are on duty in excess of your 15 paid days of military leave. 
+Pay differential provides extra compensation if your military pay is less than your city pay.</p>
+
+<p><b>Refer to Code of Ordinances, Chapter 14, Sections 251 through 256.</b></p>
+
+<h2><a name="Leave_of_Absence_without_Pay">Leave of Absence without Pay</a></h2>
+
+<p>In certain situations, your department director may grant a leave of absence for up to 14 calendar days without pay. You must request the leave in writing as soon as possible.
+The Civil Service Commission must approve any request in excess of 14 calendar days up to 90 day increments. Leaves of absence without pay may not exceed 180 calendar days during a 
+12-month period unless authorized by City Council. 
+<b>Refer to <a href="https://www2.municode.com/library/tx/houston/codes/code_of_ordinances?nodeId=COOR_CH14CISE_ARTIIRU_DIV14RU14.LEABOUEM_S14-172LEWIPAVOLEWIPAPR">
+Code of Ordinances, Chapter 14 Section 172</a>.</b></p>
+
+<h1><a name="Section_VII_-_While_You_Are_at_Work_">Section VII - While You Are at  Work</a></h1>
+
+<h2><a name="Reporting_to_Work">Reporting to Work</a></h2>
+
+<p>You are required to be at work promptly each scheduled workday. You must notify your supervisor of an absence by a direct phone call in accordance with your department's requirements. 
+In certain cases, unexcused absences will not be paid even if you have accrued sick or vacation time. Approval or non-approval of your leave request is at the discretion of your supervisor. 
+Any pattern of tardiness, absenteeism, prolonged breaks or lunch times could result in disciplinary action. <b>Refer to 
+<a href="http://www.houstontx.gov/adminpolicies/3-11.pdf">Absence, Administrative Procedure 3-11</a> and/or your departmental policy.</b></p>
+
+<h2><a name="Houston_Employee_Assessment_and_Review_(HEAR)_Process">Houston Employee Assessment and Review (HEAR) Process</a></h2>
+
+<p>Performance evaluation is a benefit to employees and management in setting expectations and providing regular feedback.  As a new employee, you will be scheduled for a 
+performance assessment during your fifth and 11th months of employment. Subsequent evaluations will be done annually.</p>
+
+<p>Employees who are promoted to a new position will have a new HEAR performance assessment conducted during the fifth month of the promotional probationary period, and annually 
+thereafter. <b>Refer to <a href="http://www.houstontx.gov/adminpolicies/3-20.pdf">Houston Employee Assessment and Review (HEAR) Process, Administrative Procedure 3-20</a>.</b></p>
+
+<h2><a name="Drug_Detection_and_Deterrence_Policy">Drug Detection and Deterrence Policy</a></h2>
+
+<p>The city is committed to providing a safe working environment. We support the highest standards of health, welfare, and safety for everyone. To promote this goal, 
+you are required to report to work in an appropriate mental and physical condition to perform your job in a satisfactory manner. The presence of illegal drugs in the body while at work 
+violates the city's zero tolerance policy regarding the use, sale and/or distribution of all controlled substances in the workplace.</p>
+
+<p>All offers of employment by the city are made conditionally, based on the requirement that you shall pass both a controlled-substance test and a medical assessment. 
+You may be subject to recurrent or situational drug screening for any of the following reasons: 1) random, 2) pre-employment, 3) post-accident, 4) reasonable suspicion, and 
+5) follow-up testing. If you apply for a promotion, transfer or demotion into a position designated as a safety-impact position, you must first pass a controlled-substance drug screen 
+and, in some instances, a medical assessment. Safety-impact positions are those considered to have a possible effect on the health and welfare of residents. 
+If you are in a designated safety-impact position, you will be subject to random drug testing. 
+Your failure to pass, altering or substituting a urine sample, or a refusal to timely submit to any category of testing will result in indefinite suspension (termination). 
+<b>Refer to the <a href="http://www.houstontx.gov/execorders/1-12.pdf">Mayor's Amended Drug Detection and Deterrence Policy, Executive Order 1-12</a>.</b></p>
+
+<h2><a name="Alcohol">Alcohol</a></h2>
+<p>If you possess a commercial driver's license (CDL) as a requirement of your city employment, you are subject to alcohol and controlled substance testing pursuant to 
+U.S. Department of Transportation regulations. You are expected to keep such license current and immediately advise your supervisor of any change in the status of your license whether 
+due to an alcohol related incident or to any other vehicle violation as required by your CDL and departmental policies. 
+<b>Refer to the <a href="http://www.houstontx.gov/execorders/1-32.pdf">CDL Drivers Alcohol and Controlled Substances Testing Procedures, Executive Order 1-32</a>.</b></p>
+
+<h2><a name="Safety">Safety</a></h2>
+
+<p>The Human Resources Department's Risk Management Division works to prevent accidents, manages the 
+<a href="http://www.houstontx.gov/adminpolicies/2-21.pdf">Safety and Health Policy (Administrative Procedure 2 - 21)</a> as well as the Safety and Health Committee. 
+The goal is to maintain a safety-oriented culture that prevents accidents, and minimizes on-the-job injuries and property damage. 
+Safety Officers/Representatives investigate safety complaints, conduct injury investigations, inspect buildings and worksites for hazards, and offer safety training and other 
+safety-related services. A Safety Officer/Representative is assigned to each city department.  For more information call (832) 393-SAFE (7233).</p>
+
+<h2><a name="Workers_Compensation">Workers' Compensation</a></h2>
+
+<p>If you are injured during the performance of your work duties and unable to work, you will receive workers' compensation benefits. 
+Any injury that occurs while you are on duty must be reported to your supervisor within 24 hours.</p>
+
+<p>For more information on the handling of Workers' Compensation claims , please refer to the Workability Guidelines, Executive Order 1-33, .  
+The Workability Guidelines and other helpful information can be found at <a href="www.houstonhumanresources.org">www.houstonhumanresources.org</a> or by calling (832) 393-SAFE (7233).</p>
+
+<p>If you are restricted in what you can do when you return to work after the injury, the city has a transitional-duty program, 
+which makes available a temporary assignment to injured workers who have medically-related work restrictions. 
+This temporary assignment provides an opportunity to return to work in a position at your level of physical or mental ability while recovering from the injury.</p>
+
+<p>Your department has partnered with the Human Resources Department Risk Management Division and outside subcontractors to assist you with your claims and recovery. 
+You may be contacted by one or more of the Risk Management team members at various times during your recovery to ensure that you are receiving the appropriate medical care for your 
+injuries and allowed to safely return to work.</p>
+
+<p>Your department's Workers' Compensation Designated Department Representative (DDR) information can be requested from your supervisor or by visiting the 
+Workers' Compensation website. Your DDR will provide assistance regarding Salary Continuation, Workers' Compensation, and Early Return-To-Work.</p>
+
+<h2><a name="Training">Training</a></h2>
+
+<p>The city recognizes the need for developing a competent, adaptable workforce. 
+Training is an important component in developing your job skills and knowledge is provided to executive, managerial, supervisory, and support personnel in three ways:</p>
+
+<ul>
+<li>The Learning and Development Center at E. B. Cape Center</li>
+<li>Department-sponsored training</li>
+<li>External classes</li>
+</ul>
+
+<p>The <a href="http://www.houstontx.gov/ldc/">Learning and Development Center</a> at E. B. Cape Center is the City of Houston's Corporate University, located at 4501 Leeland St. 
+It provides quality training that is relevant and beneficial to you and your department. 
+The center offers courses that are specific to the needs, objectives, and goals of the city. There are four basic training categories:</p>
+
+<ul>
+<li>Technology</li>
+<li>Technical training</li>
+<li>Business management training</li>
+<li>Safety training</li>
+</ul>
+
+<p>Learning for executive staff, managers, and supervisors is provided through such programs as the City Accreditation Program for Supervisors (CAPS) and the Leadership Institute Program 
+(LIP).</p>
+
+<p>You may go to the E. B. Cape website at <a href="www.houstonhumanresources.org">www.houstonhumanresources.org</a> or call (832) 395-4900 for a comprehensive listing and description of all courses. You must seek supervisor approval for training classes.</p>
+
+
+<h2><a name="Voting">Voting</a></h2>
+
+<p>The city encourages you to vote in all city, county, state and national elections. Because polling places are open from 7 a.m. to 7 p.m., you can vote before or after working hours. If approved in advance by your supervisor, a maximum of two hours off with pay may be granted under certain work-related conditions. <b>Refer to 
+<a href="http://www.houstontx.gov/adminpolicies/3-11.pdf">Absence, Administrative Procedure 3-11.</a></b></p>
+
+<h2><a name="Jury_Service/Court_Subpoena">Jury Service/Court Subpoena</a></h2>
+
+<p>You will be paid for jury duty and for time in court for city business within the scope of your employment. Proof of summons and attendance is required and should be given to your supervisor as soon as you receive it so your supervisor can plan for your time away from work. You should return to work upon completion of your court-related responsibility.  <b>Refer to 
+<a href="http://www.houstontx.gov/adminpolicies/3-11.pdf">Absence, Administrative Procedure 3-11</a>.</b></p>
+
+<h2><a name="Outside_Employment">Outside Employment</a></h2>
+
+<p>Your primary job responsibility is to the City of Houston. 
+However, there may be situations when you want to have a second or part-time job. Outside employment must not interfere with, nor take precedence over, your responsibilities to your city job. You must obtain written permission from your department director on Form CS-75 before accepting an outside job or performing any other income-producing activity. Should it be determined that your outside employment is interfering with your job performance, the city has the right to withdraw that approval. This includes not only a problem with performing your job duties but also absenteeism and tardiness as examples. You may not simultaneously hold two city positions. <b>Refer to 
+<a href="http://www.houstontx.gov/adminpolicies/3-10.pdf">Outside Employment, Administrative Procedure 3-10</a>.</b></p>
+
+<h2><a name="Elective_Office">Elective Office</a></h2>
+
+<p>If you plan to seek elective office (federal, state, county, district, or city), paid or non- paid, you must immediately make your candidacy and any subsequent election known in 
+writing to the Human Resources Director. The Director will determine whether there is a conflict of interest. 
+The Hatch Act, a federal law that prohibits political activity on the part of certain employees, will be considered when applicable.</p>
+
+<p>Precinct judge, delegate or chairman, or county political party chair positions are not included in the definition of "elective office."</p>
+
+<p>If there is a conflict of interest in your responsibilities in relation to the seeking of or holding of elective office, appropriate action may be recommended. 
+Misuse of city funds, resources, time, or privileges available as a result of city employment is cause for disciplinary action. <b>Refer to 
+<a href="http://www.houstontx.gov/mayorspolicy/110.pdf">Seeking Elective Office, Mayor's Policy No. 110</a>.</b></p>
+
+<h2><a name="Work_Attire">Work Attire</a></h2>
+
+<p>Since the city's customer base is diverse and is served by employees performing a variety of jobs, work attire should be appropriate to your duties and responsibilities. 
+During business hours or when representing the city, you are expected to present a clean, neat, and tasteful appearance. 
+Dress and groom yourself according to the requirements of your position. 
+Clothing may vary depending on the season, degree of contact with the public, nature of your job, gender, and safety issues. 
+Clothing with printed messages or statements is not appropriate, unless it is part of a city-provided uniform. 
+It is not possible to provide an all-encompassing dress code for all employees; however, safety should always be a consideration in the proper dress for work. 
+The most important guideline is common sense. Management has the right to advise you on proper attire if there is an issue or a concern. 
+Individual questions about the appropriate attire in your department should be directed to your supervisor.</p>
+
+<h2><a name="Visitors_in_the_Workplace_">Visitors in the Workplace</a></h2>
+
+<p>To provide for safety and security, city employees are issued an identification badge which must be worn at all times. 
+Visitors to most work sites will also need to display a city-issued visitor's pass, unless they are in a library, airport, health clinic, court, park, 
+or other city location accommodating the public. If you see someone who is not an employee or is clearly a visitor, direct them to an information source where they can be 
+assisted with their city business, or escort them to an exit. Be observant of and cautious about unidentified visitors to nonpublic areas.</p>
+
+<h1><a name="Section_VIII_-_Policies">Section VIII - Policies</a></h1>
+
+<h2><a name="City_Policies">City Policies</a></h2>
+
+<p>Chapter 14 of the Code of Ordinances is considered the "governing document" for City of Houston employees. 
+The mayor's policies, executive orders, and administrative procedures are largely considered amplifications of the contents of Chapter 14. 
+Individual departments may establish separate policies, consistent with the basic intent of citywide policies, to facilitate department operations. 
+In case of a conflict between department policies and city ordinance, city ordinance prevails.</p>
+
+<p>Many of the subjects raised in this guide are covered by these policies. 
+Employees should be aware that these policies can change and should periodically review the current policies for any updates. 
+To view the mayor's policies, executive orders and administrative procedures, please visit <a href="http://citypointe/Pages/default.aspx">http://citypointe/Pages/default.aspx</a>.</p>
+
+<h2><a name="Ethics_">Ethics</a></h2>
+
+<p>As a city employee, you are expected to conduct yourself professionally and honestly and to follow the rules and highest standards governing your conduct. Refer to 
+<a href="https://www2.municode.com/library/tx/houston/codes/code_of_ordinances?nodeId=COOR_CH18ETFIDI">Chapter 18 of the Code of Ordinances</a>, which can be found at 
+<a href="http://www.houstontx.gov/codes/">www.houstontx.gov/codes/</a>, or 
+<a href="http://www.houstontx.gov/execorders/1-39.pdf">Executive Order 1-39</a>, which can be found at <a href="http://www.houstontx.gov/oig">www.houstontx.gov/org</a>. 
+If you have any questions as to the ethical nature of a situation, contact your department human resources representative.</p>
+
+<h2><a name="Emergency_Situations">Emergency Situations</a></h2>
+
+<p>Each of us plays an important role in providing basic services to Houstonians before, during and after emergencies. 
+To keep vital services available, it may be necessary to change your work schedule, work overtime or be reassigned to other departments on a temporary basis.</p>
+
+<p>Each department director will designate certain employees as "essential" in conjunction with emergencies, meaning they may be required to report to work to 
+continue important services. Nonessential personnel will be instructed as to their roles. Your designation as essential or nonessential may change depending on the nature of the emergency. 
+The Mayor may, under emergency situations, declare special pay conditions for employees. <b>Refer to 
+<a href="ap2-3.html">Severe Weather and Other Emergency Conditions, Administrative Procedure 2 - 3</a>.</b></p>
+
+<h2><a name="Use_of_City_Communication_Systems">Use of City Communication Systems</a></h2>
+
+<p>Telephone, electronic and mail facilities are for your necessary work functions and should not be used for personal business. 
+The equipment, records of usage, and all files, documents, or other transactions are the sole property of the city and you should not have any expectation of 
+privacy when using city equipment, phones, or other communication services. The city's communications systems shall not be used for commercial and/or political purposes. 
+Incidental and occasional personal use is permitted, provided it is limited in duration and does not have a detrimental effect on your productivity. <b>Refer to 
+<a href="http://www.houstontx.gov/adminpolicies/8-2.html">Procedure on Electronic Mail Communication, Administrative Procedure 8-2</a>; 
+<a href="http://www.houstontx.gov/execorders/1-48.pdf">Information Technology Security, Executive Order 1-48</a>; as well as 
+<a href="http://www.houstontx.gov/mayorspolicy/503.pdf">Personal Telephone Calls and Mail, Mayor's Policy 503</a>.</b></p>
+
+<h2><a name="Operation_of_City_Vehicles_">Operation of City Vehicles</a></h2>
+
+<p>If you are assigned a city-owned vehicle for use in the course and scope of your work duties, you will be required to use the vehicle in accordance with all applicable Texas laws. 
+In addition, you must comply with all requirements by the City of Houston. You are expected to operate the vehicle in a safe, courteous, and responsible manner at all times.  
+<b>Refer to <a href="http://www.houstontx.gov/adminpolicies/2-2.pdf">Motor Vehicle Assignment and Use, Administrative Procedure 2-2</a>.</b></p>
+
+<h2><a name="Solicitation_and_Distribution">Solicitation and Distribution</a></h2>
+
+<p>In an effort to ensure a productive and harmonious work environment, city employees and outside solicitors shall not solicit or distribute non-business literature in the workplace 
+during working hours unless such activity is sponsored by the city (i.e., Combined Municipal Campaign). 
+Solicitation includes but is not limited to asking for funds or contributions, selling products or services for personal gain or charitable purposes, requesting signatures for petitions, 
+asking for support of political candidates, causes, group programs or interests, and distributing or posting literature regarding any of these types of activities. 
+<b>Refer to <a href="http://www.houstontx.gov/execorders/1-51.pdf">Employment: Solicitation, Executive Order 1-51</a>.</b></p>
+
+<h2><a name="Gift_Policy">Gift Policy</a></h2>
+
+<p>You are prohibited from accepting gifts under specific job-related circumstances. 
+Gifts may be defined as anything of value, or the offer of a discount, rebate or privilege. 
+For further information, consult your supervisor or your department human resources representative. 
+<b>Refer to <a href="http://www.houstontx.gov/execorders/1-28.pdf">Executive Order Regarding Gifts, Executive Order 1-28</a>.</b></p>
+
+<h2><a name="Smoking_Policy">Smoking Policy</a></h2>
+
+<p>City ordinance prohibits smoking in enclosed areas on property under the ownership or control of the city. Smoking is generally permitted outside public buildings 
+in areas designated for that purpose. Smoking is prohibited within 25 feet of a building's entrance or exit.</p>
+
+<h2><a name="Community/Civic_Affairs">Community/Civic Affairs</a></h2>
+
+<p>You are encouraged to take an active interest in charitable or civic activities and to apply for membership in service, trade and professional organizations. 
+However, you should spend the time necessary for these activities outside of the hours you work for the city, unless you are a HOPE member and participate in an approved 
+HOPE community project, and are paid through the HOPE Community Action Leave Pool.</p>
+
+<h2><a name="Hiring_of_Relatives">Hiring of Relatives</a></h2>
+
+<p>The city has a nepotism policy. The policy states that you may not supervise, give administrative direction to, or be supervised by a relative. 
+Relatives can be defined as brother, sister, parent, child, stepchild, or grandparent, as well as other family members. <b>Refer to 
+<a href="http://www.houstontx.gov/mayorspolicy/104.pdf">Mayor's Policy No. 104, "Hiring of Relatives."</a></b></p>
+
+<p><i>NOTE: Revisions or updates of these rules and/or procedures will be provided by the Human Resources Department on a periodic basis.</i></p>
+</font>
+</body>
+</html>

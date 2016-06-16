@@ -8,7 +8,7 @@
     var bootstrap = function() {
         $(function() {
             app.mobileApp = new kendo.mobile.Application(document.body, {
-                transition: 'slide',
+                transition: 'none',
                 skin: 'nova',
                 initial: 'components/home/view.html'
             });
@@ -41,9 +41,42 @@
             return navigator.connection.type !== 'none';
         }
     };
+
+    app.openLink = function(url) {
+        if (url.substring(0, 4) === 'geo:' && device.platform === 'iOS') {
+            url = 'http://maps.apple.com/?ll=' + url.substring(4, url.length);
+        }
+
+        window.open(url, '_system');
+        if (window.event) {
+            window.event.preventDefault && window.event.preventDefault();
+            window.event.returnValue = false;
+        }
+    };
+
 }());
 
 // START_CUSTOM_CODE_kendoUiMobileApp
 // Add custom code here. For more information about custom code, see http://docs.telerik.com/platform/screenbuilder/troubleshooting/how-to-keep-custom-code-changes
+
+// Handle the button
+function onButtonDown() {
+    // Exit the app!
+    alert("Exiting COH HR App");
+   if (navigator.app && navigator.app.exitApp) {
+    navigator.app.exitApp();
+} else if (navigator.device && navigator.device.exitApp) {
+    navigator.device.exitApp();
+}
+}
+
+ function openNav() {
+           document.getElementById("mySidenav").style.width = "250px";
+            }
+
+ function closeNav() {
+           document.getElementById("mySidenav").style.width = "0";
+            }
+
 
 // END_CUSTOM_CODE_kendoUiMobileApp
