@@ -2,10 +2,10 @@
   "ProjectName": "COHHR",
   "ProjectGuid": "550d44a1-185a-4a22-8660-ea2b80dd60c5",
   "projectVersion": 1,
-  "AppIdentifier": "com.telerik.COHHR",
-  "DisplayName": "COHHR",
+  "AppIdentifier": "com.telerik.COHMOSE",
+  "DisplayName": "COHMOSE",
   "Author": "",
-  "Description": "COHHR",
+  "Description": "COHMOSE",
   "BundleVersion": "1.0",
   "AndroidVersionCode": "1",
   "iOSDeviceFamily": [
@@ -13,6 +13,7 @@
     "2"
   ],
   "iOSBackgroundMode": [
+    "newsstand-content",
     "remote-notification"
   ],
   "ProjectTypeGuids": "{070BCB52-5A75-4F8C-A973-144AF0EAFCC9}",
