@@ -184,11 +184,36 @@
 
 /* Add custom code here. For more information about custom code, see http://docs.telerik.com/platform/screenbuilder/troubleshooting/how-to-keep-custom-code-changes */
 
-.km-arrow-e:after,
-.km-arrow-e:before
+.km-search-e:after,
+.km-search-e:before
+    {
+        content: "\e07f";
+    }
+
+.km-ques-e:after,
+.km-ques-e:before
     {
         content: "\e0fb";
     }
+
+.km-info-e:after,
+.km-info-e:before
+    {
+        content: "\e213";
+    }
+
+.km-exit-e:after,
+.km-exit-e:before
+    {
+        content: "\e0b9";
+    }
+
+.km-menu-e:after,
+.km-ques-e:before
+    {
+        content: "\e0ba";
+    }
+
 /* side menu CSS */
 .sidenav {
     height: 150%;

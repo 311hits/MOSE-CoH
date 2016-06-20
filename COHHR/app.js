@@ -62,7 +62,7 @@
 // Handle the button
 function onButtonDown() {
     // Exit the app!
-    alert("Exiting COH HR App");
+    alert("Exiting App");
    if (navigator.app && navigator.app.exitApp) {
     navigator.app.exitApp();
 } else if (navigator.device && navigator.device.exitApp) {
@@ -70,12 +70,42 @@ function onButtonDown() {
 }
 }
 
+
+
+function exitFromApp() {
+    navigator.notification.confirm(
+        'Close the app?',
+        closeApp,
+        'Super Bowl 2017',
+        'Yes, No'
+        );
+}
+     
+function closeApp(buttonIndex) {
+    if (buttonIndex == 1) {
+        navigator.app.exitApp()
+    }
+    else {
+   //     alert('Glad you are staying! ');
+    }
+}
+
+
+
+
  function openNav() {
-           document.getElementById("mySidenav").style.width = "250px";
+           document.getElementById("mySidenav").style.width = "270px";
             }
 
  function closeNav() {
            document.getElementById("mySidenav").style.width = "0";
+            }
+
+function openNav2() {
+           document.getElementById("mySidenav2").style.width = "250px";
+            }
+function closeNav2() {
+           document.getElementById("mySidenav2").style.width = "0";
             }
 
 
